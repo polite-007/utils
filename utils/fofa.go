@@ -22,7 +22,7 @@ type fofaResult struct {
 	RawBody          string
 }
 
-var Fofa = &fofa{}
+var FofaService = &fofa{}
 
 func (f *fofaResult) checkResultStatus() {
 	if strings.Contains(f.RawBody, "查询语法错误") && strings.Contains(f.RawBody, "820000") {
